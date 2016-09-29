@@ -5,14 +5,14 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 var profiles={
-     profile0:{
+     'my-profile':{
          title:`About me`,
          date:sep `25,2016`,
          heading:`Trying out my  web app tutorials in terminal`,
          content:`   <p>opening the app and stuff :) lets roickzzzz mangatha dawww.opening the app and stuff :) lets roickzzzz mangatha dawww.opening the app and stuff :) lets roickzzzz mangatha dawww.opening the app and stuff :) lets roickzzzz mangatha dawww</p>`
 
      },
-     profile1:{
+     ',y-profile1':{
          title:`About me`,
          date:sep `25,2016`,
          heading:`this is another profile`,
@@ -55,11 +55,9 @@ function template(obj){
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/my-profile', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'my-profile.html'));
-});
-app.get('/my-profile1', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'my-profile1.html'));
+ var profileName=req.params.profileName;
+app.get('/profileName', function (req, res) {
+  res.send(templete(profiles(profileName)));
 });
 
 app.get('/ui/style.css', function (req, res) {
