@@ -4,6 +4,52 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
+var profiles={
+     profile0:{
+         title:`About me`,
+         date:sep `25,2016`,
+         heading:`Trying out my  web app tutorials in terminal`,
+         content:`   <p>opening the app and stuff :) lets roickzzzz mangatha dawww.opening the app and stuff :) lets roickzzzz mangatha dawww.opening the app and stuff :) lets roickzzzz mangatha dawww.opening the app and stuff :) lets roickzzzz mangatha dawww</p>`
+
+     },
+     profile1:{
+         title:`About me`,
+         date:sep `25,2016`,
+         heading:`this is another profile`,
+         content:`   <p>opening the app and stuff :) lets roickzzzz mangatha dawww.opening the app and stuff :) lets roickzzzz mangatha dawww.opening the app and stuff :) lets roickzzzz mangatha dawww.opening the app and stuff :) lets roickzzzz mangatha daww.i am doing some changes</p>`
+
+     }
+};
+function template(obj){
+ title=obj.title;
+ date=obj.date;
+ heading=obj.heading;
+ content=obj.content;
+ var htmlcontent=`
+ <html>
+<head>
+    <title> ${title}  </title>
+ <link href="/ui/style.css" rel="stylesheet" />
+    </head>
+            <body>
+		<div class="container">
+                   	  <div>
+                        <a href='/' >Home</a>
+                      </div>
+                      <div>${date}</div>
+                      <hr/>
+                     <div>
+                        <h1>${heading}</h1>
+                      </div>
+                       <div>
+                             <p>${content}</p>
+                    </div>
+		</div>
+            </body>
+</html>`
+
+}
+
  
 
 app.get('/', function (req, res) {
