@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-       background-image: url("https://s-media-cache-ak0.pinimg.com/originals/58/47/29/5847294659e93fe3ed6106ef48b374d9.jpg");
+     background-image: url("https://s-media-cache-ak0.pinimg.com/originals/58/47/29/5847294659e93fe3ed6106ef48b374d9.jpg");
 
     margin-top: 75px;
 }
@@ -17,6 +17,9 @@ body {
     font-weight: bold;
 }
 
+p {
+    color: white;
+}
 .img-medium {
     height: 200px;
 }
