@@ -12,7 +12,7 @@ var profiles={
          content:`   <p>opening the app and stuff :) lets roickzzzz mangatha dawww.opening the app and stuff :) lets roickzzzz mangatha dawww.opening the app and stuff :) lets roickzzzz mangatha dawww.opening the app and stuff :) lets roickzzzz mangatha dawww</p>`
 
      },
-     ',y-profile1':{
+     'my-profile1':{
          title:`About me`,
          date:sep `25,2016`,
          heading:`this is another profile`,
