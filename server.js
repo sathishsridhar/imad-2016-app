@@ -55,8 +55,9 @@ function template(obj){
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
- var profileName= req.params.profileName;
+ 
 app.get('/profileName', function (req, res) {
+    var profileName= req.params.profileName;
   res.send(templete(profiles[profileName]));
 });
 
