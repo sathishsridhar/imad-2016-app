@@ -14,7 +14,7 @@ var profiles={
      },
      'my-profile1':{
          title:`About me`,
-         date:sep `25,2016`,
+         date: `sep 25,2016`,
          heading:`this is another profile`,
          content:`   <p>opening the app and stuff :) lets roickzzzz mangatha dawww.opening the app and stuff :) lets roickzzzz mangatha dawww.opening the app and stuff :) lets roickzzzz mangatha dawww.opening the app and stuff :) lets roickzzzz mangatha daww.i am doing some changes</p>`
 
