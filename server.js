@@ -9,14 +9,18 @@ var profiles={
          title:`About me`,
          date:sep `25,2016`,
          heading:`Trying out my  web app tutorials in terminal`,
-         content:`   <p>opening the app and stuff :) lets roickzzzz mangatha dawww.opening the app and stuff :) lets roickzzzz mangatha dawww.opening the app and stuff :) lets roickzzzz mangatha dawww.opening the app and stuff :) lets roickzzzz mangatha dawww</p>`
+         content:`<p>opening various profile  abd explorig and stuff,opening various profile  abd explorig and stuff
+         opening various profile  abd explorig and stuff
+         opening various profile  abd explorig and stuff</p>`
 
      },
      'my-profile1':{
          title:`About me`,
          date: `sep 25,2016`,
          heading:`this is another profile`,
-         content:`   <p>opening the app and stuff :) lets roickzzzz mangatha dawww.opening the app and stuff :) lets roickzzzz mangatha dawww.opening the app and stuff :) lets roickzzzz mangatha dawww.opening the app and stuff :) lets roickzzzz mangatha daww.i am doing some changes</p>`
+         content:`     <p>opening various profile  abd explorig and stuff,opening various profile  abd explorig and stuff
+         opening various profile  abd explorig and stuff
+         opening various profile  abd explorig and stuff</p>`
 
      }
 };
