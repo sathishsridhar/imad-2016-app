@@ -60,7 +60,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
  
-app.get('/profileName', function (req, res) {
+app.get('/:profileName', function (req, res) {
     var profileName= req.params.profileName;
   res.send(templete(profiles[profileName]));
 });
