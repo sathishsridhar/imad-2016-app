@@ -1,100 +1,31 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @the-phenom
- Watch 0
-  Star 0
-  Fork 3,984 the-phenom/imad-2016-app
-forked from hasura-imad/imad-2016-app
- Code  Pull requests 0  Projects 0  Wiki  Pulse  Graphs  Settings
-Tree: f8120e8715 Find file Copy pathimad-2016-app/server.js
-f8120e8  5 hours from now
-@the-phenom the-phenom [imad-console] Updates server.js
-2 contributors @the-phenom @coco98
-RawBlameHistory     
-81 lines (68 sloc)  2.21 KB
-var express = require('express');
-var morgan = require('morgan');
-var path = require('path');
+body {
+    font-family: sans-serif;
+     background-image: url("https://www.clipartsgram.com/image/1613050922-hd-plain-background-wallpapers-1080p-hdwallwide.jpg");
 
-var app = express();
-app.use(morgan('combined'));
-var profiles={
-     'my-profile':{
-         title:`About me`,
-         date:sep `25,2016`,
-         heading:`Trying out my  web app tutorials in terminal`,
-         content:`<p>opening various profile  abd explorig and stuff,opening various profile  abd explorig and stuff
-         opening various profile  abd explorig and stuff
-         opening various profile  abd explorig and stuff</p>`
-
-     },
-     'myprofile1':{
-         title:`About me`,
-         date: `sep 25,2016`,
-         heading:`this is another profile`,
-         content:`     <p>opening various profile  abd explorig and stuff,opening various profile  abd explorig and stuff
-         opening various profile  abd explorig and stuff
-         opening various profile  abd explorig and stuff</p>`
-
-     }
-};
-function template(obj){
- title=obj.title;
- date=obj.date;
- heading=obj.heading;
- content=obj.content;
- var htmlcontent=`
- <html>
-<head>
-    <title> ${title}  </title>
- <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-            <body>
-		<div class="container">
-                   	  <div>
-                        <a href='/' >Home</a>
-                      </div>
-                      <div>${date}</div>
-                      <hr/>
-                     <div>
-                        <h1>${heading}</h1>
-                      </div>
-                       <div>
-                             <p>${content}</p>
-                    </div>
-		</div>
-            </body>
-</html>`
-
+    margin-top: 75px;
 }
 
- 
+.center {
+    text-align: center;
+}
 
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});
- 
-app.get('/:profileName', function (req, res) {
-    var profileName= req.params.profileName;
-  res.send(templete(profiles[profileName]));
-});
+.text-big {
+    font-size: 300%;
+}
 
-app.get('/ui/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
-});
+.bold {
+    font-weight: bold;
+}
 
-app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
-});
-
-
-var port = 8080; // Use 8080 for local development because you might already have apache running on 80
-app.listen(8080, function () {
-  console.log(`IMAD course app listening on port ${port}!`);
-});
-Contact GitHub API Training Shop Blog About
-© 2016 GitHub, Inc. Terms Privacy Security Status Help
+p {
+    color: white;
+}
+.img-medium {
+    height: 200px;
+}
+.container{
+		max-width: 800px;
+		margin: 0 auto;
+		color: green;
+		} 
+		
