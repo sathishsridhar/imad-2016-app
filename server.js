@@ -4,9 +4,65 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
+var profiles={
+     'my-profile':{
+         title:`About me`,
+         date:sep `25,2016`,
+         heading:`Trying out my  web app tutorials in terminal`,
+         content:`<p>opening various profile  abd explorig and stuff,opening various profile  abd explorig and stuff
+         opening various profile  abd explorig and stuff
+         opening various profile  abd explorig and stuff</p>`
+
+     },
+     'myprofile1':{
+         title:`About me`,
+         date: `sep 25,2016`,
+         heading:`this is another profile`,
+         content:`     <p>opening various profile  abd explorig and stuff,opening various profile  abd explorig and stuff
+         opening various profile  abd explorig and stuff
+         opening various profile  abd explorig and stuff</p>`
+
+     }
+};
+function template(obj){
+ title=obj.title;
+ date=obj.date;
+ heading=obj.heading;
+ content=obj.content;
+ var htmlcontent=`
+ <html>
+<head>
+    <title> ${title}  </title>
+ <link href="/ui/style.css" rel="stylesheet" />
+    </head>
+            <body>
+		<div class="container">
+                   	  <div>
+                        <a href='/' >Home</a>
+                      </div>
+                      <div>${date}</div>
+                      <hr/>
+                     <div>
+                        <h1>${heading}</h1>
+                      </div>
+                       <div>
+                             <p>${content}</p>
+                    </div>
+		</div>
+            </body>
+</html>`
+
+}
+
+ 
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+ 
+app.get('/:profileName', function (req, res) {
+    var profileName= req.params.profileName;
+  res.send(templete(profiles[profileName]));
 });
 
 app.get('/ui/style.css', function (req, res) {
