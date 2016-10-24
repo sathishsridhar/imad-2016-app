@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 var profiles={
-     'myprofile':{
+     'my-profile':{
          title:`About me`,
          date:sep `25,2016`,
          heading:`Trying out my  web app tutorials in terminal`,
