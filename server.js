@@ -52,6 +52,7 @@ function template(obj){
 		</div>
             </body>
 </html>`
+return htmlcontent;
 
 }
 
