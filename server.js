@@ -35,6 +35,7 @@ function template(obj){
     
  <link href="/ui/style.css" rel="stylesheet" />
     </head>
+    <title> ${title} </title>
             <body>
 		<div class="container">
                    	  <div>
