@@ -62,7 +62,7 @@ app.get('/', function (req, res) {
  
 app.get('/:profileName', function (req, res) {
     var profileName= req.params.profileName;
-  res.send(templete(profiles[profileName]));
+  res.send(template(profiles[profileName]));
 });
 
 app.get('/ui/style.css', function (req, res) {
