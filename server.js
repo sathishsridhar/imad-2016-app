@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 var profiles={
      'my-profile':{
-         title:`About me`,
+         title:`sep 25,2016`,
          date: `sep 25,2016`,
          heading:`Trying out my  web app tutorials in terminal`,
          content:`<p>opening various profile  abd explorig and stuff,opening various profile  abd explorig and stuff
@@ -15,7 +15,7 @@ var profiles={
 
      },
      'myprofile1':{
-         title:`About me`,
+         title:`sep 25,2016`,
          date: `sep 25,2016`,
          heading:`this is another profile`,
          content:`     <p>opening various profile  abd explorig and stuff,opening various profile  abd explorig and stuff
