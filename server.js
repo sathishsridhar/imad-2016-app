@@ -25,14 +25,14 @@ var profiles={
      }
 };
 function template(obj){
- title=obj.title;
- date=obj.date;
- heading=obj.heading;
- content=obj.content;
+ title= obj.title;
+ date= obj.date;
+ heading= obj.heading;
+ content= obj.content;
  var htmlcontent=`
  <html>
 <head>
-    <title> ${title}  </title>
+    
  <link href="/ui/style.css" rel="stylesheet" />
     </head>
             <body>
