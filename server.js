@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 var profiles={
      'my-profile':{
          title:`About me`,
-         date:sep `25,2016`,
+         date: `sep 25,2016`,
          heading:`Trying out my  web app tutorials in terminal`,
          content:`<p>opening various profile  abd explorig and stuff,opening various profile  abd explorig and stuff
          opening various profile  abd explorig and stuff
