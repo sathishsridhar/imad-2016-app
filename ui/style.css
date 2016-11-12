@@ -33,7 +33,7 @@ p {
 		margin: 0 auto;
 		color: green;
 		} 
-		.button {
+		.button:hover {
     background-color: white;
     border: none;
     color: black;
