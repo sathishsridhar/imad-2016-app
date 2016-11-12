@@ -16,6 +16,9 @@ body {
 .bold {
     font-weight: bold;
 }
+.color{
+    color:white;
+}
 
 p {
     color: white;
