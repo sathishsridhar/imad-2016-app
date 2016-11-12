@@ -46,7 +46,6 @@ p {
 .button:hover {
     background-color: #4CAF50; /* Green */
     color: white;}
-    a.action_link {
-text-decoration: none;
+ a, u {
+    text-decoration: none;
 }
-		
