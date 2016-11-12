@@ -33,8 +33,8 @@ p {
 		margin: 0 auto;
 		color: green;
 		} 
-		.button:hover {
-    background-color:Green;
+		.button{
+    background-color:White;
     border: none;
     color: black;
     padding: 15px 32px;
@@ -43,4 +43,7 @@ p {
     display: inline-block;
     font-size: 16px;
 }
+.button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;}
 		
